@@ -12,7 +12,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class GradleBuilderTest {
     private String gradleHome = "C:\\softwares\\gradle-2.1-all\\gradle-2.1";
-    private String projectDir = "C:\\studyProjects\\LearnGradle";
+    private String projectDir = "./src/main/resources/gradleModule";
     private GradleBuilder builder = new GradleBuilder(gradleHome, projectDir);
 
     @Test

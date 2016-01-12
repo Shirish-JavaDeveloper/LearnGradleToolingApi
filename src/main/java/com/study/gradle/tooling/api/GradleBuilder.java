@@ -1,14 +1,9 @@
 package com.study.gradle.tooling.api;
 
 
-import org.gradle.api.Task;
 import org.gradle.tooling.BuildLauncher;
 import org.gradle.tooling.GradleConnector;
 import org.gradle.tooling.ProjectConnection;
-import org.gradle.tooling.internal.consumer.ConnectionParameters;
-import org.gradle.tooling.internal.consumer.DefaultConnectionParameters;
-import org.gradle.tooling.internal.consumer.DefaultGradleConnector;
-import org.gradle.tooling.model.DomainObjectSet;
 import org.gradle.tooling.model.GradleProject;
 import org.gradle.tooling.model.GradleTask;
 import org.gradle.tooling.model.idea.IdeaDependency;
@@ -23,13 +18,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class GradleBuilder {
-    private File gradleHomeDir;
+    private File gradleInstallationDir;
     private GradleConnector connector;
 
-    public GradleBuilder(String gradleHomeDir, String projectDir) {
-        this.gradleHomeDir = new File(gradleHomeDir);
+    public GradleBuilder(String gradleInstallationDir, String projectDir) {
+        this.gradleInstallationDir = new File(gradleInstallationDir);
         connector = GradleConnector.newConnector();
-        connector.useInstallation(this.gradleHomeDir);
+        connector.useInstallation(this.gradleInstallationDir);
         connector.forProjectDirectory(new File(projectDir));
     }
 
