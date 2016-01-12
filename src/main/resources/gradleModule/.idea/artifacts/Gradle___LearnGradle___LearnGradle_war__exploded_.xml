@@ -1,0 +1,43 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : LearnGradle : LearnGradle.war (exploded)">
+    <output-path>$PROJECT_DIR$/classes/artifacts/LearnGradle/exploded/LearnGradle.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="LearnGradle/web/Web Gradle : LearnGradle.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="LearnGradle" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.2.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.amqp:spring-rabbit:1.5.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-messaging:4.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.retry:spring-retry:1.1.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.amqp:spring-amqp:1.5.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.rabbitmq:http-client:1.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.rabbitmq:amqp-client:3.5.6" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpclient:4.3.6" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.5.1" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpcore:4.3.3" />
+          <element id="library" level="project" name="Gradle: commons-codec:commons-codec:1.6" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.5.0" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.5.1" />
+          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/classes/artifacts/LearnGradle/exploded/LearnGradle.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

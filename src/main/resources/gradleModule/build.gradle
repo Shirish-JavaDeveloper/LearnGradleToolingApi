@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'war'
+
+defaultTasks 'clean', 'build', 'war', 'copyDepJars'
+
+sourceCompatibility = 1.6
+
+repositories {
+    mavenCentral()
+    jcenter()
+
+}
+
+dependencies {
+    compile 'org.springframework:spring-core:4.2.3.RELEASE'
+    compile 'org.springframework.amqp:spring-rabbit:1.5.2.RELEASE'
+}
+
+task copyDepJars(type: Copy) {
+    from configurations.compile
+    into 'C:\\Users\\athakur\\Desktop\\lib'
+}
