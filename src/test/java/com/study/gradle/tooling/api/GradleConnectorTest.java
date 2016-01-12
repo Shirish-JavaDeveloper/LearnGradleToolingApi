@@ -1,7 +1,6 @@
 package com.study.gradle.tooling.api;
 
 
-import org.gradle.tooling.internal.consumer.DefaultGradleConnector;
 import org.junit.Test;
 import java.io.IOException;
 import java.util.Arrays;
@@ -10,10 +9,10 @@ import java.util.List;
 import static junit.framework.Assert.assertTrue;
 import static junit.framework.TestCase.assertEquals;
 
-public class GradleBuilderTest {
-    private String gradleHome = "C:\\softwares\\gradle-2.1-all\\gradle-2.1";
+public class GradleConnectorTest {
+    private String gradleInstallationDir = "C:\\softwares\\gradle-2.1-all\\gradle-2.1";
     private String projectDir = "./src/main/resources/gradleModule";
-    private GradleBuilder builder = new GradleBuilder(gradleHome, projectDir);
+    private GradleConnector builder = new GradleConnector(gradleInstallationDir, projectDir);
 
     @Test
     public void getGradleVersion() throws IOException, InterruptedException {
