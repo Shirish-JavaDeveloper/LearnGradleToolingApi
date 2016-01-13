@@ -57,9 +57,7 @@ public class GradleConnector {
         if(executeSpecificTasks(tasks)) {
             build.forTasks(tasks);
         }
-
         buildProject(connection, build);
-
         return true;
     }
 
@@ -75,14 +73,14 @@ public class GradleConnector {
         return tasks.length >0;
     }
 
-    public List<String> getProjectDependencies() {
-        return getDependencies().stream()
+    public List<String> getProjectDependencyNames() {
+        return getProjectDependencies().stream()
                                 .map(file -> file.getName())
                                 .collect(Collectors.toList());
 
     }
 
-    public List<File> getDependencies() {
+    public List<File> getProjectDependencies() {
         List<File> dependencyFiles = new ArrayList<>();
         ProjectConnection connection = connector.connect();
         try{
