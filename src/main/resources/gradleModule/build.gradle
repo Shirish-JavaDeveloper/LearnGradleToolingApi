@@ -4,7 +4,7 @@ apply plugin: 'war'
 
 defaultTasks 'clean', 'build', 'war', 'copyDepJars'
 
-sourceCompatibility = 1.6
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
